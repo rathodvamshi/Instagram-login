@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add favicon -->
+    <link rel="icon" href="./insta_logo.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="phone-container">
+            <img src="./insta3.png" alt="Phone Image" class="phone-image">
+        </div>
+        <div class="login-container">
+            <div class="logo">
+                <h1>Instagram</h1>
+            </div>
+            <form id="login-form">
+                <input type="text" id="username" name="username" placeholder="Phone number, username, or email" autocomplete="off" required>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Password" autocomplete="off" required>
+                    <span id="toggle-password" class="eye-icon"></span>
+                </div>
+                <button type="submit">Log in</button>
+            </form>
+            <div class="or-divider">
+                <hr class="line"> OR <hr class="line">
+            </div>
+            <div class="login-with-facebook">
+                <img src="./facebooklogo.png" alt="Facebook Logo" class="facebook-logo">
+                <a href="https://www.facebook.com/login.php"><span>Log in with Facebook</span></a>
+            </div>
+            <a href="https://www.instagram.com/accounts/password/reset/" class="forgot-password">Forgot password?</a>
+            <div class="sign-up">
+                <span>Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a></span>
+            </div>
+            <div class="get-the-app">
+                <span>Get the app.</span>
+                <div class="app-icons">
+                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android"><img src="./google.png" alt="Google Play" style="border-radius: 10px;"></a>
+                    <a href="https://www.microsoft.com/store/apps/9nblggh4q5c7"><img src="./micro.png" alt="Microsoft Store" style="border-radius: 10px; width: 100px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

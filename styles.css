@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-container {
+    flex: 1;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.phone-image {
+    width: 100%;
+    max-width: 300px;
+}
+
+.login-container {
+    flex: 1;
+    max-width: 330px;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 40px; /* Increase the size of the Instagram title */
+    color: #333; /* Adjust color if needed */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 92%;
+}
+
+button {
+    padding: 15px;
+    background-color: #0095f6;
+    color: rgb(242, 232, 232);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #69bdbd;
+    color: rgb(15, 15, 14);
+    border-radius: 20px;
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    color: #8e8e8e;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.login-with-facebook {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #385185;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login-with-facebook img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.forgot-password {
+    color: #385185;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.sign-up {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.get-the-app {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.app-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.app-icons img {
+    width: 120px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.password-container {
+    position: relative;
+}
+
+#password {
+    padding-right: 10px; /* Space for eye icon */
+}
+
+.eye-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-image: url('./close_eye.png'); /* Add your eye icon image */
+    background-size: cover;
+    width: 30px;
+    height: 20px;
+}
+
+/* Add styles for when the password is visible (optional) */
+.eye-icon.visible {
+    background-image: url('/open_eye.png'); /* Add your eye-slash icon image */
+}
+
+/* Prevent auto-suggestions */
+input {
+    -webkit-autocomplete: off;
+    -moz-autocomplete: off;
+    autocomplete: off;
+}
